@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ChordFinder Result</title>
+</head>
+
+<body>
+	<h1>ChordFinder Result</h1>
+	<p><strong>Using Method 1:</strong> Chord identification based on adjacent intervals</p>
+	<p><strong>Current Rules File:</strong> <span th:text="${rulesFile}">chord_rules_method1.json</span></p>
+	
+	<!-- Display error message if any -->
+	<h2 th:if="${errorMessage}" th:text="${errorMessage}">Error message here</h2>
+	
+	<!-- Display chord results if no error -->
+	<h2 th:unless="${errorMessage}" th:text="${resultMessage}">Chord Result</h2>	
+	
+	<!-- Display each chord individually -->
+	<div th:unless="${errorMessage}">
+		<ul th:if="${chords != null && !chords.isEmpty()}">
+			<li th:each="chord : ${chords}" th:text="${chord}">Chord name</li>
+		</ul>
+	</div>
+	
+	
+	<!-- New search form -->
+	<form th:action="@{/findChords}" th:object="${chordFinderForm}" method="post">
+			<label for="notes">Try another chord: </label>
+			<input type="text" id="notes" th:field="*{notes}" placeholder="Enter 3-7 notes (e.g., C E G)">
+			<button type="submit">Find chord</button>
+		</form>
+
+	<a href="/">Go to ChordFinder</a>
+</body>
+</html>

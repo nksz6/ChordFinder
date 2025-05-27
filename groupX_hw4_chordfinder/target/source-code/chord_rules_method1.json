@@ -1,0 +1,125 @@
+{
+	"chords": [
+		{
+			"name": "MAJOR",
+			"display_name": "Maj",
+			"intervals": [
+				"MAJOR_THIRD",
+				"MINOR_THIRD"
+			]
+		},
+		{
+			"name": "MINOR",
+			"display_name": "Min",
+			"intervals": [
+				"MINOR_THIRD",
+				"MAJOR_THIRD"
+			]
+		},
+		{
+			"name": "DIMINISHED",
+			"display_name": "Dim",
+			"intervals": [
+				"MINOR_THIRD",
+				"MINOR_THIRD"
+			]
+		},
+		{
+			"name": "AUGMENTED",
+			"display_name": "Aug",
+			"intervals": [
+				"MAJOR_THIRD",
+				"MAJOR_THIRD"
+			]
+		},		{
+		    "name": "SUS2",
+		    "display_name": "sus2",
+		    "intervals": ["MAJOR_SECOND", "PERFECT_FOURTH"]
+		  },
+		  {
+		    "name": "SUS4",
+		    "display_name": "sus4",
+		    "intervals": ["PERFECT_FOURTH", "MAJOR_SECOND"]
+		  },
+		  {
+		    "name": "MAJOR_SEVENTH",
+		    "display_name": "Maj7",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "MINOR_SEVENTH",
+		    "display_name": "m7",
+		    "intervals": ["MINOR_THIRD", "MAJOR_THIRD", "MINOR_THIRD"]
+		  },
+		  {
+		    "name": "DOMINANT_SEVENTH",
+		    "display_name": "7",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MINOR_THIRD"]
+		  },
+		  {
+		    "name": "DIMINISHED_SEVENTH",
+		    "display_name": "dim7",
+		    "intervals": ["MINOR_THIRD", "MINOR_THIRD", "MINOR_THIRD"]
+		  },
+		  {
+		    "name": "HALF_DIMINISHED_SEVENTH",
+		    "display_name": "m7b5",
+		    "intervals": ["MINOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "MINOR_MAJOR_SEVENTH",
+		    "display_name": "mMaj7",
+		    "intervals": ["MINOR_THIRD", "MAJOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "AUGMENTED_MAJOR_SEVENTH",
+		    "display_name": "Maj7#5",
+		    "intervals": ["MAJOR_THIRD", "MAJOR_THIRD", "MAJOR_SECOND"]
+		  },
+		  {
+		    "name": "DOMINANT_SEVENTH_FLAT_FIVE",
+		    "display_name": "7b5",
+		    "intervals": ["MAJOR_THIRD", "DIMINISHED_FIFTH", "MINOR_THIRD"]
+		  },
+		  {
+		    "name": "DOMINANT_SEVENTH_SHARP_FIVE",
+		    "display_name": "7#5",
+		    "intervals": ["MAJOR_THIRD", "MAJOR_THIRD", "MINOR_THIRD"]
+		  },
+		  {
+		    "name": "SIXTH",
+		    "display_name": "6",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MAJOR_SECOND"]
+		  },
+		  {
+		    "name": "MINOR_SIXTH",
+		    "display_name": "m6",
+		    "intervals": ["MINOR_THIRD", "MAJOR_THIRD", "MAJOR_SECOND"]
+		  },
+		  {
+		    "name": "NINTH",
+		    "display_name": "9",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "MAJOR_NINTH",
+		    "display_name": "Maj9",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "MINOR_NINTH",
+		    "display_name": "m9",
+		    "intervals": ["MINOR_THIRD", "MAJOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD"]
+		  },
+		  {
+		    "name": "ELEVENTH",
+		    "display_name": "11",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD", "PERFECT_FOURTH"]
+		  },
+		  {
+		    "name": "THIRTEENTH",
+		    "display_name": "13",
+		    "intervals": ["MAJOR_THIRD", "MINOR_THIRD", "MINOR_THIRD", "MAJOR_THIRD", "PERFECT_FOURTH", "MAJOR_THIRD"]
+		  }
+	]
+}

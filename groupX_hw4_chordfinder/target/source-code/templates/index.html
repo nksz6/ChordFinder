@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>ChordFinder</title>
+</head>
+
+<body>
+	<h1>Group 1 ChordFinder</h1>
+	<h2>Stack Tracers HW4</h2>
+	<h3>Created by Carter Johnson, Nick Kelley, Rayleigh Thai</h3>
+	
+	<p><strong>Using Method 1:</strong> Chord identification based on adjacent intervals</p>
+	<p><strong>Current Rules File:</strong> <span th:text="${rulesFile}">chord_rules_method1.json</span></p>
+	
+	<form th:action="@{/findChords}" th:object="${chordFinderForm}" method="post">
+		<label for="notes">Input of Notes: </label>
+			<input type="text" id="notes" th:field="*{notes}" placeholder="Enter 3-7 notes (e.g., C E G)">
+			<button type="submit">Find your chord</button>
+		</form>
+		
+		
+	<!--
+	<!-- This is single input (-old stop here ->) javascript:void(0);
+	<form th:action="@{/findChords}" th:object="${chordFinderForm}" method="post">
+		<label for="notes">Input of Notes: </label>
+		<input type="text" id="notes" th:field="*{notes}" placeholder="Note Inputing">
+
+		<label for="method">Method: </label>
+		<select id="method" th:field="*{method}">
+			<option value="Method1">Method 1</option>
+			<option value="Method2">Method 2</option>
+		</select>
+
+		<button type="submit">Find your chord</button>
+	</form>
+	-->
+	<!-- Note examples -->
+	<p>Example inputs: "C E G" (C Major), "A C E" (A Minor), "C E G B" (C Major 7)</p>
+
+	<!-- Ray's original commented multi-input section -->
+	<!--
+	<form id="chordForm" action="/test" method="post">
+	    <div id="inputs-container">
+	      <div class="input-group">
+	        <label for="noteInput">Chord 1:</label>
+	        <input type="text" name="noteInput" class="input-field"><br>
+	      </div>
+	    </div>
+
+	    <button type="button" onclick="addInput()">Add More Chords</button><br><br>
+	    <button type="submit">Find your chord(s)</button>
+	</form>
+	-->
+</body>
+</html>
